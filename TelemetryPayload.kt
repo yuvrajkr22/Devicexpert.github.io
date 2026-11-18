@@ -1,0 +1,5 @@
+package com.devicexpert.app.domain.model.telemetry
+sealed interface TelemetryPayload
+data class AndroidTelemetry(val batteryPct: Float, val batteryTempC: Float, val isCharging: Boolean, val chargingSource: String, val ramUsedBytes: Long, val storageUsedBytes: Long, val cpuCoreFreqsMhz: List<Int>, val thermalStatus: Int, val netType: String, val rxBytesPerSec: Long, val txBytesPerSec: Long, val uptimeMillis: Long, val activeSensorReadings: Map<String, Float>) : TelemetryPayload
+data class ComputerTelemetry(val cpuUsagePct: Float, val ramUsedBytes: Long, val diskUsedBytes: Long, val netRxBps: Long, val netTxBps: Long, val cpuTempC: Float?, val uptimeSeconds: Long, val topProcessCount: Int) : TelemetryPayload
+data class IotTelemetry(val temperatureC: Float?, val humidityPct: Float?, val voltageV: Float?, val currentMa: Float?, val powerMw: Float?, val rssiDbm: Int?, val uptimeSeconds: Long, val customMetrics: Map<String, Double>) : TelemetryPayload

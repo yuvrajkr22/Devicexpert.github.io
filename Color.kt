@@ -1,0 +1,16 @@
+package com.devicexpert.app.core.designsystem
+import androidx.compose.ui.graphics.Color
+val ElectricCyan = Color(0xFF06B6D4)
+val TechIndigo = Color(0xFF6366F1)
+val DeepCarbon = Color(0xFF0B0F17)
+val CardSurface = Color(0xFF131B2E)
+val CardSurfaceElevated = Color(0xFF1E293B)
+val BorderStroke = Color(0xFF1E293B)
+val DividerStroke = Color(0xFF2D3748)
+val StatusHealthyEmerald = Color(0xFF10B981)
+val StatusWarningAmber = Color(0xFFF59E0B)
+val StatusCriticalCrimson = Color(0xFFEF4444)
+val StatusOfflineSlate = Color(0xFF64748B)
+val TextPrimary = Color(0xFFF8FAFC)
+val TextSecondary = Color(0xFF94A3B8)
+val TextTertiary = Color(0xFF64748B)

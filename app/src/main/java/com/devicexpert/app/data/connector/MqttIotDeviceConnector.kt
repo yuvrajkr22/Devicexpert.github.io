@@ -7,6 +7,7 @@ import com.devicexpert.app.domain.model.telemetry.*
 import com.hivemq.client.mqtt.MqttClient
 import com.hivemq.client.mqtt.mqtt5.Mqtt5AsyncClient
 import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.future.await
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.firstOrNull

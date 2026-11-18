@@ -9,7 +9,6 @@ import io.github.jan.supabase.auth.Auth
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.realtime.Realtime
-import io.ktor.client.engine.okhttp.OkHttp
 import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
@@ -21,7 +20,6 @@ object SupabaseModule {
             install(Auth)
             install(Postgrest)
             install(Realtime)
-            httpEngine { OkHttp.create() }
         }
     }
 }
